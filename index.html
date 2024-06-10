@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baseball Form</title>
+<style src="index.css"></style>
+</head>
+<body>
+<h2>Select Pitching or Batting:</h2>
+<select id="selection" onchange="toggleForm()">
+    <option value="">Select...</option>
+    <option value="batting">Batting</option>
+    <option value="pitching">Pitching</option>
+</select>
+
+<section id="battingForm" class="hidden">
+    <h3>Batting Form</h3>
+    <div class="date">
+        <label for="date">Date:</label> 
+        <input type="text" id="date" name="date" required>
+    </div>
+    <!-- Add other Batting form fields here -->
+</section>
+
+<section id="pitchingForm" class="hidden">
+    <h3>Pitching Form</h3>
+    <div class="name">
+        <label for="name">Name:</label> 
+        <input type="text" id="name" name="name" required>
+    </div>
+    <!-- Add other Pitching form fields here -->
+</section>
+
+<script src="index.js"></script>
+</body>
+</html>
